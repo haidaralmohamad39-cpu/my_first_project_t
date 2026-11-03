@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Taj ❤️</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #111;
+      font-family: Arial, sans-serif;
+    }
+
+    .heart {
+      width: 180px;
+      height: 180px;
+      background: red;
+      transform: rotate(-45deg);
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      width: 180px;
+      height: 180px;
+      background: red;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .heart::before {
+      top: -90px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: 90px;
+      top: 0;
+    }
+
+    .name {
+      position: absolute;
+      z-index: 2;
+      transform: rotate(45deg);
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="heart">
+    <div class="name">Taj</div>
+  </div>
+
+</body>
+</html>
